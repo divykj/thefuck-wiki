@@ -7,7 +7,7 @@ alias fuck='eval $(thefuck $(fc -ln -1))'
 
 # Fish
 
-Add this function to `config.fish`:
+Add these functions to `config.fish`:
 ```fish
 function __thefuck_repl -d 'Replace operators into fish-compatible'
     set -l tmp (echo $argv | sed 's/ && / ; and /g')
