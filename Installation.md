@@ -1,6 +1,4 @@
-# Installation
-
-## Generic way
+# Generic way
 
 You need to install requirements:
 - pip
@@ -13,22 +11,21 @@ And then install `thefuck` with `pip`:
 sudo pip install thefuck
 ```
 
-## OS X
+# OS X
 
 ```bash
 brew install thefuck
 ```
 
-## Ubuntu
+# Ubuntu
 
 ```bash
 sudo apt-get install python-pip python-dev
 sudo pip install thefuck
 ```
 
-## Arch
+# Arch
 
 ```bash
 sudo pacman -S thefuck
 ```
-
