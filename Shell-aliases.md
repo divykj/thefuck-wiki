@@ -1,8 +1,15 @@
-# Bash and Zsh
+# Bash
 
-Add this alias to `.bashrc` or `.zshrc` or `.bash_profile` (for OSX):
+Add this alias to `.bashrc` or `.bash_profile` (for OSX):
 ```bash
-alias fuck='eval $(thefuck $(fc -ln -1))'
+alias fuck='eval $(thefuck $(fc -ln -1)); history -r'
+```
+
+# ZSH
+
+Add this alias to `.zshrc`:
+```bash
+alias fuck='eval $(thefuck $(fc -ln -1 | tail -n 1)); fc -R'
 ```
 
 # Fish
