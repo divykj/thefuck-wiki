@@ -19,7 +19,7 @@ brew install thefuck
 
 # Ubuntu
 
-Do not use `sudo easy_install pip`, it not working on Ubuntu.
+:exclamation: Do not use `sudo easy_install pip`, it not working on Ubuntu.
 
 ```bash
 sudo apt-get install python-pip python-dev
