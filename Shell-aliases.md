@@ -14,19 +14,29 @@ alias fuck='eval $(thefuck $(fc -ln -1 | tail -n 1)); fc -R'
 
 # Fish
 
-Add these functions to `config.fish`:
+Add this function to `config.fish`:
 ```fish
-function __thefuck_repl -d 'Replace operators into fish-compatible'
-    set -l tmp (echo $argv | sed 's/ && / ; and /g')
-    echo $tmp | sed 's/ || / ; or /g'
-end
-
 function fuck -d 'Correct your previous console command'
+    set -l exit_code $status
     set -l eval_script (mktemp 2>/dev/null ; or mktemp -t 'thefuck')
-    thefuck $history[1] > $eval_script
-    eval (__thefuck_repl (cat $eval_script))
+    set -l fucked_up_commandd $history[1]
+    thefuck $fucked_up_commandd > $eval_script
+    . $eval_script
     rm $eval_script
+    if test $exit_code -ne 0
+        history --delete $fucked_up_commandd
+    end
 end
+```
+
+Alternatively, you can redirect the output of `thefuck-alias`:
+```bash
+ ~> thefuck-alias >> ~/.config/fish/config.fish
+```
+
+Or, yet, you can create a function:
+```bash
+ ~> thefuck-alias > ~/.config/fish/functions/fuck.fish
 ```
 
 # Powershell
