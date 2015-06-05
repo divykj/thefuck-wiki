@@ -17,6 +17,12 @@ sudo pip install thefuck
 brew install thefuck
 ```
 
+or
+
+```bash
+sudo easy_install thefuck
+```
+
 # Ubuntu
 
 :exclamation: Do not use `sudo easy_install pip`, it does not work on Ubuntu.
