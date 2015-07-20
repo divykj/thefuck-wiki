@@ -2,14 +2,14 @@
 
 Add this alias to `.bashrc` or `.bash_profile` (for OSX):
 ```bash
-alias fuck='eval $(thefuck $(fc -ln -1)); history -r'
+eval "$(thefuck-alias)"
 ```
 
 # ZSH
 
 Add this alias to `.zshrc`:
 ```bash
-alias fuck='eval $(thefuck $(fc -ln -1 | tail -n 1)); fc -R'
+eval "$(thefuck-alias)"
 ```
 
 # Fish
