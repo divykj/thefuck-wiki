@@ -52,3 +52,9 @@ function fuck {
     else { iex "$fuck" }
 }
 ```
+
+# tcsh
+
+```tcsh
+alias fuck 'set fucked_cmd=`history -h 2 | head -n 1` && eval `thefuck ${fucked_cmd}`'
+```
