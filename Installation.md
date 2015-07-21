@@ -2,6 +2,7 @@
 
 You need to install requirements:
 - pip
+- setuptools (>= 17.1) (see: [#291](https://github.com/nvbn/thefuck/pull/291))
 - python
 - python-dev (or python-devel on some distros: Fedora, CentOS)
 
