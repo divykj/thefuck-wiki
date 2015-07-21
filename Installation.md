@@ -3,7 +3,7 @@
 You need to install requirements:
 - pip
 - python
-- python-dev
+- python-dev (or python-devel on some distros: Fedora, CentOS)
 
 And then install `thefuck` with `pip`:
 
