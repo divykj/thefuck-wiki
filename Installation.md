@@ -29,7 +29,7 @@ sudo easy_install thefuck
 
 ```bash
 sudo apt-get install python-pip python-dev
-sudo pip install thefuck
+sudo pip install psutil thefuck
 ```
 
 # Arch
