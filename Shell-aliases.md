@@ -2,14 +2,14 @@
 
 Add this alias to `.bashrc` or `.bash_profile` (for OSX):
 ```bash
-eval "$(thefuck-alias)"
+eval "$(thefuck --alias)"
 ```
 
 # ZSH
 
 Add this alias to `.zshrc`:
 ```bash
-eval "$(thefuck-alias)"
+eval "$(thefuck --alias)"
 ```
 
 # Fish
@@ -31,12 +31,12 @@ end
 
 Alternatively, you can redirect the output of `thefuck-alias`:
 ```bash
- ~> thefuck-alias >> ~/.config/fish/config.fish
+ ~> thefuck --alias >> ~/.config/fish/config.fish
 ```
 
 Or, yet, you can create a function:
 ```bash
- ~> thefuck-alias > ~/.config/fish/functions/fuck.fish
+ ~> thefuck --alias > ~/.config/fish/functions/fuck.fish
 ```
 
 # Powershell
