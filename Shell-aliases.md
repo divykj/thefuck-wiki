@@ -9,7 +9,7 @@ eval "$(thefuck --alias)"
 
 Add this alias to `.zshrc`:
 ```bash
-alias fuck='$(thefuck $(fc -ln -1 | tail -n 1)); fc -R'
+eval "$(thefuck --alias)"
 ```
 
 # Fish
