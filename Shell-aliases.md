@@ -25,11 +25,12 @@ Put this in your Powershell `$PROFILE` on Windows:
 
 ```powershell
 function fuck {
-    $fuck = $(thefuck (get-history -count 1).commandline)
-    if($fuck.startswith("echo")) {
-        $fuck.substring(5)
+    $fuck = $(thefuck (Get-History -Count 1).CommandLine)
+    if (-not [string]::IsNullOrWhiteSpace($fuck))
+    {
+        if ($fuck.StartsWith("echo")) { $fuck = $fuck.Substring(5) }
+        else { iex "$fuck" }
     }
-    else { iex "$fuck" }
 }
 ```
 
