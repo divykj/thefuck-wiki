@@ -41,6 +41,6 @@ sudo pacman -S thefuck
 # Fedora
 
 ```bash
-sudo dnf install python-devel
+sudo dnf install python-pip python-devel
 sudo pip install thefuck
 ```
