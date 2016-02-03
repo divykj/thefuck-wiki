@@ -37,3 +37,10 @@ sudo pip install psutil thefuck
 ```bash
 sudo pacman -S thefuck
 ```
+
+# Fedora
+
+```bash
+sudo dnf install python-devel
+sudo pip install thefuck
+```
