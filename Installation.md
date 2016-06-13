@@ -44,3 +44,9 @@ sudo pacman -S thefuck
 sudo dnf install python-pip python-devel
 sudo pip install thefuck
 ```
+
+# Gentoo
+
+```bash
+sudo emerge --ask app-shells/thefuck
+```
