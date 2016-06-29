@@ -24,14 +24,7 @@ eval (thefuck --alias | tr '\n' ';')
 Put this in your Powershell `$PROFILE` on Windows:
 
 ```powershell
-function fuck {
-    $fuck = $(thefuck (Get-History -Count 1).CommandLine)
-    if (-not [string]::IsNullOrWhiteSpace($fuck))
-    {
-        if ($fuck.StartsWith("echo")) { $fuck = $fuck.Substring(5) }
-        else { iex "$fuck" }
-    }
-}
+iex "$(thefuck --alias)"
 ```
 
 # tcsh
