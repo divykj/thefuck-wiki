@@ -8,7 +8,7 @@ You need to install requirements:
 And then install `thefuck` with `pip`:
 
 ```bash
-sudo pip install thefuck
+sudo -H pip install thefuck
 ```
 
 # OS X
