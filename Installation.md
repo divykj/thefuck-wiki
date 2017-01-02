@@ -50,3 +50,8 @@ sudo pip install thefuck
 ```bash
 sudo emerge --ask app-shells/thefuck
 ```
+
+# Void Linux
+```bash
+sudo xbps-install thefuck
+```
