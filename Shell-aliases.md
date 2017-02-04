@@ -16,7 +16,7 @@ eval "$(thefuck --alias)"
 
 Add this function to `config.fish`:
 ```fish
-eval (thefuck --alias | tr '\n' ';')
+thefuck --alias | source 
 ```
 
 # Powershell
