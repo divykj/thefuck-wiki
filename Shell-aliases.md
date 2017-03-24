@@ -19,6 +19,9 @@ Add this function to `config.fish`:
 thefuck --alias | source 
 ```
 
+To avoid the delay of the shell startup, you could also create an [autoloaded function](https://fishshell.com/docs/current/tutorial.html#tut_autoload).
+Create a file `~/.config/fish/functions/fuck.fish` and paste the output of `thefuck --alias`.
+
 # Powershell
 
 Put this in your Powershell `$PROFILE` on Windows:
