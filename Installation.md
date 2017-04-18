@@ -50,6 +50,12 @@ sudo pip install thefuck
 ```bash
 sudo emerge --ask app-shells/thefuck
 ```
+# OpenSUSE
+
+```bash
+sudo zypper in python3 python3-devel
+sudo pip install thefuck
+```
 
 # Void Linux
 ```bash
