@@ -12,6 +12,8 @@ Add this alias to `.zshrc`:
 eval "$(thefuck --alias)"
 ```
 
+>_If you use oh-my-zsh, try [this awesome *thefuck* plugin](https://github.com/robbyrussell/oh-my-zsh/blob/master/plugins/thefuck/README.md)._
+
 # Fish
 
 Add this function to `config.fish`:
