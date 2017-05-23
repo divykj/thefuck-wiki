@@ -50,3 +50,13 @@ And then load it (you can add this to xonshrc for it to be loaded in every xonsh
 ```
 xontrib load thefuck
 ```
+
+# Troubleshooting
+
+If the following error message is shown when trying to run `thefuck`:
+
+```
+command not found: thefuck
+```
+
+Ensure that `~/.local/bin` is present in your path. eg. add `PATH="$PATH:$HOME/.local/bin"` to `.bashrc`, `.zshrc` etc.
