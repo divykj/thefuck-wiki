@@ -28,8 +28,8 @@ sudo easy_install thefuck
 :exclamation: Do not use `sudo easy_install pip`, it does not work on Ubuntu.
 
 ```bash
-sudo apt-get install python-pip python-dev
-sudo pip install psutil thefuck
+sudo apt install python3-dev python3-pip
+sudo pip3 install thefuck
 ```
 
 # Arch
