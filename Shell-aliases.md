@@ -33,6 +33,18 @@ Put this in your Powershell `$PROFILE` on Windows:
 iex "$(thefuck --alias)"
 ```
 
+To overcome Python unicode warnings on your unicode Powershell console:
+```
+c:\python3\lib\site-packages\win_unicode_console\__init__.py:31: RuntimeWarning: sys.stdin.encoding == 'utf-8', whereas sys.stdout.encoding == 'ascii', readline hook consumer may assume they are the same
+  readline_hook.enable(use_pyreadline=use_pyreadline)
+```
+
+Add this line **before** the line above in your Powershell `$PROFILE` on Windows:
+
+```
+$env:PYTHONIOENCODING="utf-8"
+```
+
 # tcsh
 
 ```tcsh
