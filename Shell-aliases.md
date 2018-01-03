@@ -25,6 +25,12 @@ To avoid the delay of the shell startup, you could also create an [autoloaded fu
 Create a file `~/.config/fish/functions/fuck.fish` instead and paste the output of `thefuck --alias` 
 into that file. Fish should start as fast as before.
 
+For cases when you override a command and turn it into an alias (e.g. `alias sed=gsed` or `alias git=hub`), you should add all them to the `THEFUCK_OVERRIDDEN_ALIASES` environment variable, separated by comma. For example, in your `config.fish`:
+
+```fish
+set -x THEFUCK_OVERRIDDEN_ALIASES 'gsed,git'
+```
+
 # Powershell
 
 Put this in your Powershell `$PROFILE` on Windows:
