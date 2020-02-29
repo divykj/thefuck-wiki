@@ -51,6 +51,22 @@ Add this line **before** the line above in your Powershell `$PROFILE` on Windows
 $env:PYTHONIOENCODING="utf-8"
 ```
 
+To overcome PowerShell not running scripts, for which the error looks as such:
+
+```
+. : File C:\Windows\System32\WindowsPowerShell\v1.0\profile.ps1 cannot be loaded because running scripts is disabled
+on this system. For more information, see about_Execution_Policies at https:/go.microsoft.com/fwlink/?LinkID=135170.
+At line:1 char:3
+```
+
+You could set execution policy to unrestricted through the PowerShell command:
+
+```
+Set-ExecutionPolicy unrestricted
+```
+
+[Click here](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.security/set-executionpolicy?view=powershell-7) to read more about Microsoft's execution policies.
+
 # tcsh
 
 ```tcsh
