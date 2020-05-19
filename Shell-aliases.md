@@ -85,6 +85,21 @@ And then load it (you can add this to xonshrc for it to be loaded in every xonsh
 xontrib load thefuck
 ```
 
+
+# Windows with \*nix shell
+
+Follow the shell specific instructions.
+
+**Note:**
+If you use windows based python installation, append ` | tr -d '\r'` to alias command.
+
+For example, on bash or zsh: 
+
+```bash
+eval "$(thefuck --alias | tr -d '\r')"
+```
+
+
 # Troubleshooting
 
 If the following error message is shown when trying to run `thefuck`:
